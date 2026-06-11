@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f1117;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.rate {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #8ee34f;
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #c9ced8;
+}
+
+.currency-box {
+    background: #181c25;
+
+    border: 1px solid #2d3442;
+    border-radius: 18px;
+
+    min-height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+
+    transition: all .2s ease;
+}
+
+.currency-box:hover {
+    border-color: #8ee34f;
+    box-shadow: 0 0 20px rgba(142, 227, 79, 0.15);
+}
+
+.currency-input {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    width: 100%;
+
+    color: white;
+
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.currency-input::placeholder {
+    color: #667085;
+}
+
+.currency-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 150px;
+    justify-content: flex-end;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.flag {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0;
+}
+
+.arrow {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    background: #8ee34f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #111;
+
+    font-size: 34px;
+    font-weight: bold;
+
+    user-select: none;
+
+    box-shadow: 0 0 20px rgba(142, 227, 79, 0.35);
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .rate {
+        font-size: 22px;
+    }
+
+    .currency-input {
+        font-size: 34px;
+    }
+
+    .currency-right {
+        font-size: 24px;
+    }
+}
